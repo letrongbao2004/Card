@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cảm Ơn Xác Nhận Tham Dự — 3M &amp; Phước Khang</title>
+
+    <!-- SEO & Social Meta Tags -->
+    <meta
+      name="description"
+      content="Lời cảm ơn chân thành từ 3M & Phước Khang đến Quý khách mời."
+    />
+    <meta
+      property="og:title"
+      content="Cảm Ơn Xác Nhận Tham Dự — 3M & Phước Khang"
+    />
+
+    <!-- Google Fonts: Cinzel, Cormorant Garamond, Playfair Display, Montserrat, Alex Brush -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- File CSS Riêng Biệt -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="invitation-page-body">
+    <main class="invitation-wrapper" style="max-width: 620px">
+      <article class="invitation-card thankyou-card clean-editorial">
+        <!-- Viền đôi thanh lịch mạ vàng tối giản -->
+        <div class="card-inner-border"></div>
+
+        <!-- Tag cảm ơn chính thức -->
+        <div class="invitation-brand-badge" style="margin-top: 10px">
+          <span>XÁC NHẬN THÀNH CÔNG</span>
+        </div>
+
+        <!-- Tiêu đề cảm ơn -->
+        <h1
+          class="invitation-main-heading"
+          id="thankyouTitle"
+          style="font-size: 2.1rem; margin-top: 8px"
+        >
+          Cảm Ơn Quý Khách!
+        </h1>
+        <div
+          class="invitation-script-theme"
+          style="font-size: 2.2rem; margin-bottom: 12px"
+        >
+          Hân Hạnh Đón Tiếp
+        </div>
+
+        <!-- Thông điệp cảm ơn -->
+        <p
+          class="thankyou-message"
+          id="thankyouMessage"
+          style="
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.88);
+            max-width: 500px;
+            margin: 0 auto 20px;
+          "
+        >
+          3M &amp; Phước Khang rất vinh hạnh và mong chờ được đón tiếp Quý khách
+          trong sự kiện Hội Nghị Khách Hàng ngày 24/10/2026!
+        </p>
+
+        <!-- Bảng tóm tắt thông tin đã phản hồi -->
+        <div
+          class="thankyou-summary-box"
+          style="
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 14px;
+            padding: 18px 22px;
+            max-width: 460px;
+            margin: 0 auto;
+          "
+        >
+          <div
+            class="summary-row"
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding: 8px 0;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            "
+          >
+            <span
+              class="summary-label"
+              style="color: var(--gold-light); font-size: 0.84rem"
+              >Quý khách:</span
+            >
+            <span
+              class="summary-val"
+              id="summaryGuestName"
+              style="color: #ffffff; font-weight: 600; font-size: 0.92rem"
+              >—</span
+            >
+          </div>
+          <div
+            class="summary-row"
+            id="summaryCompanyRow"
+            style="
+              display: none;
+              justify-content: space-between;
+              padding: 8px 0;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            "
+          >
+            <span
+              class="summary-label"
+              style="color: var(--gold-light); font-size: 0.84rem"
+              >Đơn vị:</span
+            >
+            <span
+              class="summary-val"
+              id="summaryCompany"
+              style="color: #ffffff; font-weight: 500; font-size: 0.92rem"
+              >—</span
+            >
+          </div>
+          <div
+            class="summary-row"
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding: 8px 0;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            "
+          >
+            <span
+              class="summary-label"
+              style="color: var(--gold-light); font-size: 0.84rem"
+              >Trạng thái:</span
+            >
+            <span
+              class="summary-val"
+              id="summaryStatus"
+              style="color: #69f0ae; font-weight: 600; font-size: 0.92rem"
+              >—</span
+            >
+          </div>
+          <div
+            class="summary-row"
+            id="summaryWishesRow"
+            style="
+              display: none;
+              justify-content: space-between;
+              padding: 8px 0;
+            "
+          >
+            <span
+              class="summary-label"
+              style="color: var(--gold-light); font-size: 0.84rem"
+              >Ghi chú:</span
+            >
+            <span
+              class="summary-val"
+              id="summaryWishes"
+              style="
+                color: #ffffff;
+                font-weight: 400;
+                font-size: 0.88rem;
+                max-width: 240px;
+                text-align: right;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+              >—</span
+            >
+          </div>
+        </div>
+
+        <!-- Các nút điều hướng -->
+        <div
+          style="
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 28px;
+          "
+        >
+          <a href="detail.html" class="btn-back-soft">
+            Xem lại lịch trình sự kiện
+          </a>
+          <a
+            href="index.html"
+            class="btn-back-soft"
+            style="
+              background: rgba(229, 28, 36, 0.18);
+              border-color: rgba(229, 28, 36, 0.5);
+            "
+          >
+            Về trang chủ Poster
+          </a>
+        </div>
+
+        <!-- Chân thiệp -->
+        <footer class="invitation-footer clean-footer" style="margin-top: 32px">
+          <p>Hội Nghị Khách Hàng 3M &amp; Phước Khang 2026</p>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Script đọc tham số URL hiển thị nội dung cảm ơn & Hạt vàng lấp lánh -->
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name") || params.get("to") || "Quý Khách Hàng";
+        const status = params.get("status") || "Tôi sẽ tham dự";
+        const company = params.get("company") || "";
+        const wishes = params.get("wishes") || "";
+
+        const titleElem = document.getElementById("thankyouTitle");
+        const msgElem = document.getElementById("thankyouMessage");
+        const nameElem = document.getElementById("summaryGuestName");
+        const statusElem = document.getElementById("summaryStatus");
+        const companyElem = document.getElementById("summaryCompany");
+        const companyRow = document.getElementById("summaryCompanyRow");
+        const wishesElem = document.getElementById("summaryWishes");
+        const wishesRow = document.getElementById("summaryWishesRow");
+
+        if (nameElem) nameElem.textContent = decodeURIComponent(name);
+        if (statusElem) statusElem.textContent = decodeURIComponent(status);
+
+        if (company && companyElem && companyRow) {
+          companyElem.textContent = decodeURIComponent(company);
+          companyRow.style.display = "flex";
+        }
+
+        if (wishes && wishesElem && wishesRow) {
+          wishesElem.textContent = decodeURIComponent(wishes);
+          wishesRow.style.display = "flex";
+        }
+
+        const isAttending =
+          status.includes("tham dự") ||
+          status.includes("sẽ đến") ||
+          status === "yes";
+
+        if (isAttending) {
+          if (titleElem) titleElem.textContent = "Cảm Ơn Quý Khách!";
+          if (msgElem) {
+            msgElem.textContent =
+              "Cảm ơn Quý khách! 3M & Phước Khang rất vinh hạnh và mong chờ được đón tiếp Quý khách trong sự kiện Hội Nghị Khách Hàng 24/10/2026!";
+          }
+        } else {
+          if (titleElem) titleElem.textContent = "Cảm Ơn Quý Khách Đã Phản Hồi";
+          if (msgElem) {
+            msgElem.textContent =
+              "Cảm ơn Quý khách đã gửi phản hồi. Ban tổ chức rất tiếc khi không được đón tiếp Quý khách lần này và kính chúc Quý khách nhiều sức khỏe, thành công!";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

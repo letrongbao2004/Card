@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hội Nghị Khách Hàng 3M &amp; Phước Khang — Kiến Tạo Giá Trị</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Thư mời tham dự Hội Nghị Khách Hàng: Kiến Tạo Giá Trị cùng 3M & Phước Khang vào ngày 24/10/2026 tại TP.HCM.">
+  <meta property="og:title" content="Hội Nghị Khách Hàng 3M & Phước Khang">
+  <meta property="og:description" content="Kính mời Quý Khách Hàng đến tham dự sự kiện và khám phá các giải pháp công nghệ mới.">
+  <meta property="og:image" content="home.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- File CSS Riêng Biệt -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-fullscreen-body">
+
+  <!-- ==========================================================================
+       LANDING PAGE: POSTER HOME.JPG TOÀN MÀN HÌNH (FULLSCREEN)
+       ========================================================================== -->
+  <main class="fullscreen-landing-container">
+    
+    <!-- 1. Ảnh Poster home.jpg trải rộng 100% toàn màn hình -->
+    <img 
+      src="home.jpg" 
+      alt="Hội Nghị Khách Hàng 3M &amp; Phước Khang — Kiến Tạo Giá Trị" 
+      class="fullscreen-poster-img"
+      id="homePosterImg"
+    >
+
+    <!-- 2. Lớp phủ chuyển màu gradient tinh tế cạnh dưới -->
+    <div class="fullscreen-bottom-gradient"></div>
+
+    <!-- 3. Thanh nút bấm Xem chi tiết trôi nổi trên ảnh -->
+    <div class="fullscreen-floating-bar">
+      <a href="detail.html" id="btnViewDetails" class="btn-fullscreen-cta">
+        <span>Xem Chi Tiết Sự Kiện</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+      <div class="fullscreen-subtext">
+        Chạm để xem lịch trình chương trình &amp; xác nhận tham dự
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Script giữ nguyên tham số cá nhân hóa (?to=Tên_Khách hoặc ?name=...) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('btnViewDetails');
+      if (btn && window.location.search) {
+        btn.href = 'detail.html' + window.location.search;
+      }
+    });
+  </script>
+</body>
+</html>
