@@ -2,7 +2,7 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Cảm Ơn Xác Nhận Tham Dự — 3M &amp; Phước Khang</title>
 
     <!-- SEO & Social Meta Tags -->
@@ -27,27 +27,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="invitation-page-body">
-    <main class="invitation-wrapper" style="max-width: 620px">
+    <main class="invitation-wrapper thankyou-wrapper">
       <article class="invitation-card thankyou-card clean-editorial">
         <!-- Viền đôi thanh lịch mạ vàng tối giản -->
         <div class="card-inner-border"></div>
 
         <!-- Tag cảm ơn chính thức -->
-        <div class="invitation-brand-badge" style="margin-top: 10px">
+        <div class="invitation-brand-badge" style="margin-top: 6px">
           <span>XÁC NHẬN THÀNH CÔNG</span>
         </div>
 
         <!-- Tiêu đề cảm ơn -->
         <h1
-          class="invitation-main-heading"
+          class="invitation-main-heading thankyou-main-title"
           id="thankyouTitle"
-          style="font-size: 2.1rem; margin-top: 8px"
         >
           Cảm Ơn Quý Khách!
         </h1>
         <div
-          class="invitation-script-theme"
-          style="font-size: 2.2rem; margin-bottom: 12px"
+          class="invitation-script-theme thankyou-script-theme"
         >
           Hân Hạnh Đón Tiếp
         </div>
@@ -56,146 +54,39 @@
         <p
           class="thankyou-message"
           id="thankyouMessage"
-          style="
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: rgba(255, 255, 255, 0.88);
-            max-width: 500px;
-            margin: 0 auto 20px;
-          "
         >
           3M &amp; Phước Khang rất vinh hạnh và mong chờ được đón tiếp Quý khách
           trong sự kiện Hội Nghị Khách Hàng ngày 24/10/2026!
         </p>
 
         <!-- Bảng tóm tắt thông tin đã phản hồi -->
-        <div
-          class="thankyou-summary-box"
-          style="
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 14px;
-            padding: 18px 22px;
-            max-width: 460px;
-            margin: 0 auto;
-          "
-        >
-          <div
-            class="summary-row"
-            style="
-              display: flex;
-              justify-content: space-between;
-              padding: 8px 0;
-              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            "
-          >
-            <span
-              class="summary-label"
-              style="color: var(--gold-light); font-size: 0.84rem"
-              >Quý khách:</span
-            >
-            <span
-              class="summary-val"
-              id="summaryGuestName"
-              style="color: #ffffff; font-weight: 600; font-size: 0.92rem"
-              >—</span
-            >
+        <div class="thankyou-summary-box">
+          <div class="summary-row">
+            <span class="summary-label">Quý khách:</span>
+            <span class="summary-val" id="summaryGuestName">—</span>
           </div>
-          <div
-            class="summary-row"
-            id="summaryCompanyRow"
-            style="
-              display: none;
-              justify-content: space-between;
-              padding: 8px 0;
-              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            "
-          >
-            <span
-              class="summary-label"
-              style="color: var(--gold-light); font-size: 0.84rem"
-              >Đơn vị:</span
-            >
-            <span
-              class="summary-val"
-              id="summaryCompany"
-              style="color: #ffffff; font-weight: 500; font-size: 0.92rem"
-              >—</span
-            >
+          <div class="summary-row" id="summaryCompanyRow" style="display: none;">
+            <span class="summary-label">Đơn vị:</span>
+            <span class="summary-val" id="summaryCompany">—</span>
           </div>
-          <div
-            class="summary-row"
-            style="
-              display: flex;
-              justify-content: space-between;
-              padding: 8px 0;
-              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            "
-          >
-            <span
-              class="summary-label"
-              style="color: var(--gold-light); font-size: 0.84rem"
-              >Trạng thái:</span
-            >
-            <span
-              class="summary-val"
-              id="summaryStatus"
-              style="color: #69f0ae; font-weight: 600; font-size: 0.92rem"
-              >—</span
-            >
+          <div class="summary-row">
+            <span class="summary-label">Trạng thái:</span>
+            <span class="summary-val" id="summaryStatus" style="color: #69f0ae;">—</span>
           </div>
-          <div
-            class="summary-row"
-            id="summaryWishesRow"
-            style="
-              display: none;
-              justify-content: space-between;
-              padding: 8px 0;
-            "
-          >
-            <span
-              class="summary-label"
-              style="color: var(--gold-light); font-size: 0.84rem"
-              >Ghi chú:</span
-            >
-            <span
-              class="summary-val"
-              id="summaryWishes"
-              style="
-                color: #ffffff;
-                font-weight: 400;
-                font-size: 0.88rem;
-                max-width: 240px;
-                text-align: right;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-              "
-              >—</span
-            >
+          <div class="summary-row" id="summaryWishesRow" style="display: none;">
+            <span class="summary-label">Ghi chú:</span>
+            <span class="summary-val" id="summaryWishes">—</span>
           </div>
         </div>
 
         <!-- Các nút điều hướng -->
-        <div
-          style="
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 28px;
-          "
-        >
+        <div class="thankyou-nav-btns">
           <a href="detail.html" class="btn-back-soft">
             Xem lại lịch trình sự kiện
           </a>
           <a
             href="index.html"
-            class="btn-back-soft"
-            style="
-              background: rgba(229, 28, 36, 0.18);
-              border-color: rgba(229, 28, 36, 0.5);
-            "
+            class="btn-back-soft btn-back-poster"
           >
             Về trang chủ Poster
           </a>
